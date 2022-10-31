@@ -1,0 +1,25 @@
+.loadMore-btn {
+  font-size: 20px;
+  color: #5514b4;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  .loadMore-txt {
+    display: inline-block;
+    vertical-align: middle;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .loadMore-icon {
+    display: inline-block;
+    vertical-align: middle;
+    i {
+      display: inline-block;
+      top: 5px !important;
+      font-size: 35px !important;
+      vertical-align: bottom;
+      font-weight: 200 !important;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.bt-fault-card {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 7%);
+  display: inline-block;
+  min-height: 168px;
+  width: 372px;
+  background-color: #fff;
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+  border-left: 2px solid #5514b4;
+  &:hover {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+  }
+  .card-header {
+    padding: 24px 20px 13px 25px;
+    font-family: "BTRegular", Calibri;
+    font-size: 20px;
+    .card-title {
+      color: #333;
+    }
+    .card-icon-wrp {
+      position: absolute;
+      right: 20px;
+      top: 18px;
+      i {
+        font-size: 30px;
+        display: block;
+      }
+    }
+  }
+  .header-divider {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  .card-body {
+    padding: 20px 25px 25px;
+    .btn.primary-btn {
+      margin-top: 7px;
+    }
+  }
+  .stage-btn {
+    font-size: 14px;
+    font-family: "BTBold", Calibri;
+    border: 1px solid #333;
+    padding: 0px 5px;
+    margin: 0 0 16px;
+    display: inline-block;
+    
+    &.In{
+      color:#008A00 !important;
+      border-color: #008A00;
+      background-color: white;
+    }  
+    &.Action{
+      color: #E60014;
+      border-color: #E60014;
+    }
+    &.Closed{
+      color: #000000;
+      border-color:  #000000;
+    }
+  }
+  .detail-wrp {
+    margin: 0 0 18px;
+    .bt-label {
+      font-size: 14px;
+      font-family: "BTBold", Calibri;
+      display: block;
+      padding: 0 0 0;
+      line-height: 1;
+    }
+  }
+}
+@media (max-width: 1155px) and (min-width: 1024px) {
+  .bt-fault-card {
+    width: 310px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .bt-fault-card {
+    width: 352px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bt-fault-card {
+    width: 100%;
+  }
+}

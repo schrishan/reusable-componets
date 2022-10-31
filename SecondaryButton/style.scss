@@ -1,0 +1,31 @@
+.bt-btn {
+    &.bt-secondary-btn {
+        background-color: white;
+        color: #5514b4;
+        border: 1px solid #5514b4;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 0px 0px 10px;
+        &:hover {
+            background-color:#540e85;
+            color: white;
+            cursor: pointer;
+        }
+        &.bt-disabled {
+            &:hover {
+                background-color: #5514b4;
+                cursor: default;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .bt-btn {
+        width: 100%;
+        height: auto;
+        & .bt-psecondary-btn {          
+          margin-bottom: 10px;
+        }
+      }
+    }
+   

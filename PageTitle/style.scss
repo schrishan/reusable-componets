@@ -1,0 +1,23 @@
+.pg-title-wrp {
+  margin: 35px auto 50px;
+  .pg-title {
+    font-size: 48px;
+    font-family: "BTLight";
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .pg-title-wrp {
+    .pg-title {
+      font-size: 32px;
+      line-height: 1.25;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .pg-title-wrp {
+    .pg-title {
+      font-size: 32px;
+      line-height: 1.25;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.status-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 568px;
+  background-color: #fff;
+  min-height: 578px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+  .card-img-wrp {
+    width: 100%;
+    height: 378px;
+  }
+  .content-wrp {
+    padding: 25px 25px 6px;
+    .card-title {
+      font-size: 28px;
+      font-family: "BTLight";
+      margin: 0;
+    }
+    .card-desc {
+      margin: 5px 0 0;
+      display: block;
+    }
+  }
+  .func-content {
+    margin: 15px 0 0;
+    .check-service-link {
+      margin-top: 50px;
+    }
+  }
+  .lazy-img {
+    .img-err-loaded {
+      border-width: 25px;
+    }
+  }
+}
+@media (max-width: 1155px) and (min-width: 1024px) {
+  .status-card {
+    width: 475px;
+    min-height: 465px;
+    .card-img-wrp {
+      height: 312px;
+    }
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .status-card {
+    width: 349px;
+    min-height: auto;
+    .card-img-wrp {
+      height: 232px;
+    }
+    .content-wrp {
+      padding: 15px 15px 15px;
+      .card-title {
+        font-size: 24px;
+      }
+    }
+    .func-content {
+      margin: 10px 0 0;
+      .check-service-link {
+        margin-top:0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .status-card {
+    width: 100%;
+    min-height: auto;
+    .card-img-wrp {
+      width: 100%;
+      height: 230px;
+    }
+    .content-wrp {
+      padding: 15px;
+      .card-title {
+        font-size: 24px;
+      }
+    }
+    .func-content {
+      margin: 10px 0 0;
+      .check-service-link {
+        margin-top:0;
+      }
+    }
+  }
+}

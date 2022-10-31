@@ -1,0 +1,35 @@
+.link-btn-wrp {
+  display: inline-block;
+  .link-btn {
+    color: #5514b4;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: bottom;
+    &.btn-txt {
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+    }
+    &.btn-txt:hover {
+      text-decoration: underline;
+    }
+  }
+  .link-arrow {
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    i {
+      font-size: 14px;
+      top: 3px;
+      font-weight: bold;
+      color: #5514b4;
+    }
+  }
+  .btn-txt {
+    display: inline-block;
+    vertical-align: middle;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

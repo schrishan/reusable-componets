@@ -1,0 +1,56 @@
+[tool-tip] {
+  position: relative;
+}
+[tool-tip]:before {
+  content: "";
+  /* hides the tooltip when not hovered */
+  display: none;
+  content: "";
+  border-left: 7px solid #0000;
+  border-right: 7px solid #0000;
+  border-bottom: 10px solid #333;
+  position: absolute;
+  top: -10px;
+  left: 18px;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+.errorWarning[tool-tip]:before {
+  border-bottom: 5px solid #e60014;
+}
+.errorWarning[tool-tip]:after {
+  display: none;
+  background-image: url("../../assets/Alert.png") !important;
+  background-size: 26.8px 26.8px;
+  padding-left: 50px;
+  background: #e60014;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  // background-size: 39px 29px;
+  background-position-y: center;
+  background-position-x: 12px;
+}
+[tool-tip]:after {
+  display: none;
+  content: attr(tool-tip);
+  //position:absolute;
+  top: 45px;
+  left: 0px;
+  padding: 5px 8px;
+  background: #333333;
+  color: #ffffff;
+  z-index: 9;
+  font-size: 14px;
+  // height:25px;
+  line-height: 18px;
+  // white-space:nowrap;
+  word-wrap: normal;
+  margin: 15px 0 10px 0;
+  padding: 15px;
+}
+
+// [tool-tip]:before,[tool-tip]:after {
+//     display:block;
+//    }

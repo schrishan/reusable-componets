@@ -1,0 +1,107 @@
+.bt-card {
+  width: 372px;
+  min-height: 168px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.0710227);
+  display: inline-block;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  &:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+  .card-link {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.bt-card .card-header {
+  padding: 32px 20px 20px 25px;
+  font-family: "BTregular", calibri;
+  font-size: 20px;
+}
+.bt-card .card-icon-wrap {
+  position: absolute;
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  i {
+    font-size: 37px;
+  }
+}
+.pos-r {
+  position: relative;
+}
+.bt-card .card-title {
+  color: #070707;
+  font-family: "BTLight", calibri;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.action-holder .bt-card .card-body {
+  padding: 0px 25px 25px 25px;
+}
+
+.bt-card .card-body p {
+  margin: 0 0 -8px;
+  padding: 0 0 0;
+  min-height: 60px;
+}
+p {
+  line-height: 21px;
+  word-break: break-word;
+  font-weight: 400;
+  font-size: 16px;
+}
+.link-btn-wrp {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  z-index: 2;
+}
+.link-btn-wrp i {
+  vertical-align: middle;
+}
+@media (min-width: 1024px) and (max-width: 1175px) {
+  .bt-card {
+    width: 310px;
+    // margin: 0 20px 20px 0;
+    //display: inline-block;
+  }
+  .bt-card .card-body p {
+    min-height: 81px;
+  }
+}
+@media (max-width: 767px) {
+  .action-holder {
+    margin: 10px auto 0;
+    padding: 0;
+  }
+  .bt-card {
+    width: 100%;
+    margin: 0 auto 0;
+    min-height: auto;
+  }
+  .bt-card .card-body p {
+    min-height: auto;
+    margin: 0 0 15px;
+  }
+  .action-holder .bt-card .card-body {
+    padding: 0px 50px 25px 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bt-card {
+    width: 349px;
+    margin: 0 5px 15px 0;
+  }
+}

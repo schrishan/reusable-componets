@@ -1,0 +1,152 @@
+.warning-alert {
+  z-index: 113;
+  background-color: #da020f;
+  padding: 13.75px;
+  width: 924px;
+  color: #fff;
+  border-radius: 12px;
+  position: fixed;
+  top: -40px;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  min-height: 84px;
+  margin: auto;
+  animation: slide-down 0.3s forwards;
+  animation-timing-function: cubic-bezier(.47,-0.04,.47,1);
+  .warning-txt {
+    padding-left: 15px;
+    width: calc(100% - 60px);
+    display: inline-block;
+    vertical-align: top;
+
+    .headingmd-typography500 {
+
+      height: 28px;
+      left: 0px;
+      top: 0px;
+  
+      /*Heading Md (S4/H4) /ALL (Headline)*/
+  
+      font-family: BT Curve;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 500;
+      /*Identical to Box Height or 140% */
+  
+      color: #FFFFFF;
+  
+  }
+  .headingmd-typography700 {
+
+   font-family: BT Curve;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .bt-p {
+      position: static;
+      width: 820px;
+      height: auto;
+      left: 0px;
+      top: 0px;
+      font-family: "BT Curve";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    .dismiss-txt:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .dismiss-txt {
+      display: block;
+      font-size: 16px;
+      font-family: "BT Curve";
+      font-weight: 400;
+      line-height: 24px;
+      width: fit-content;
+      margin-top: 5px;
+      cursor: pointer;
+      color: #FFFFFF;
+      i.bt-icon-link-arrow {
+        font-size: 9px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  i {
+    font-size: 25px;
+  }
+  span {
+    color: #fff;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .close-icon i {
+    font-size: 9px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+.dismissed.warning-alert {
+  animation: fadeout 0.2s forwards;
+  animation-timing-function: cubic-bezier(.47,-0.04,.47,1);
+}
+.warning-alert.warn {
+ background-color: #FAC202; 
+}
+.warning-alert.success {
+ background-color: #1B8811;
+}
+svg {
+  width: 24.5px;
+  height: 24.5px;
+  margin-top: 3px;
+}
+@keyframes slide-down {
+  from {
+    top: -40px;
+    opacity: 0;
+  }
+  to {
+    top: 40px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    top: 40px;
+    opacity: 1;
+  }
+  to {
+    top: 40px;
+    opacity: 0;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .warning-alert {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .warning-alert {
+    width: 92.2%;
+    .warning-txt {
+      width: calc(100% - 65px);
+      .bt-label {
+        font-size: 16px;
+      }
+    }
+  }
+}

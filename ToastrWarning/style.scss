@@ -1,0 +1,133 @@
+body {
+  &.bt-reg {
+    .toastr-container {
+      .warning {
+        .warning-item {
+          background: #e60014;
+        }
+      }
+
+      .success {
+        .success-item {
+          background: #008a00;
+        }
+      }
+      .item {
+        padding: 15px 0;
+        border-radius: 0;
+        border: 0;
+        cursor: pointer;
+        transition: 0.2s ease-out;
+      }
+
+      .alert-wrp {
+        width: 1156px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+
+        .message {
+          width: calc(100% - 30px);
+          display: inline-block;
+          vertical-align: middle;
+
+          .alert-msg {
+            vertical-align: top;
+            font-family: "BTBold", Calibri;
+            color: #ffffff;
+            &.title {
+              font-size: 20px;
+            }
+            &.desc {
+              display: block;
+              padding-left: 30px;
+              font-family: "BTRegular", Calibri;
+              line-height: 1.25;
+            }
+          }
+
+          i.alert-icon {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 5px 0 0;
+            color: #ffffff;
+            font-size: 25px;
+          }
+        }
+      }
+
+      .warning-item {
+        background: #e60014;
+        // border-bottom: 1px solid $body-color;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        position: fixed;
+        width: 100%;
+
+        .close {
+          i {
+            vertical-align: top;
+            color: #ffffff;
+            font-size: 20px;
+            display: inline-block;
+            margin: 1px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1156px) and (min-width: 1024px) {
+  body {
+    &.bt-reg {
+      .toastr-container {
+        .alert-wrp {
+          width: 966px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  body {
+    &.bt-reg {
+      .toastr-container {
+        .alert-wrp {
+          width: 720px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  body {
+    &.bt-reg {
+      .toastr-container {
+        .alert-wrp {
+          width: 95%;
+          margin-left: 17px;
+
+          .message {
+            width: 100%;
+            .alert-msg {
+              width: 85%;
+              display: inline-block;
+              &.desc {
+                width: 100%;
+                padding-left: 0;
+              }
+            }
+          }
+          .close {
+            i {
+              position: absolute;
+              top: -5px;
+              right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

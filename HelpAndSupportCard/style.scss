@@ -1,0 +1,142 @@
+.help-card {
+  &:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+  width: 372px;
+  padding: 28px 25px 25px;
+  margin-bottom: 5px;
+  min-height: 204px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.0710227);
+  .card-link {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .help-card-section-header {
+    .card-title {
+      font-size: 28px;
+      display: inline-block;
+      vertical-align: middle;
+      font-family: "BTLight";
+      color: #5514b4;
+    }
+    .card-icon-wrp {
+      display: inline-block;
+      vertical-align: middle;
+      i {
+        font-size: 50px;
+        color: #5514b4;
+      }
+    }
+  }
+  .help-card-card-body {
+    margin: 16px 0 12px 0px;
+    display: flex;
+    justify-content: space-between;
+    .bodytitle {
+      width: calc(100% - 95px);
+      color: #2a2a2a;
+      line-height: 1.4;
+    }
+    .iconholder {
+      display: inline-block;
+      margin-right: 10px;
+      .images {
+        color: #5514b4;
+        font-size: 57px;
+        line-height: 1.1;
+        &.ma-btBroadband:before {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .help-card-btn-wrp {
+    z-index: 2;
+    i {
+      vertical-align: middle;
+    }
+  }
+}
+.bt-card {
+  .link-btn-wrp i {
+    vertical-align: middle;
+  }
+}
+@media (max-width: 1156px) and (min-width: 1024px) {
+  .help-card {
+    width: auto;
+    .help-card-section-header {
+      .card-title {
+      }
+      .card-icon-wrp {
+        i {
+        }
+      }
+    }
+
+    .none-desktop {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .help-card {
+    width: 354px;
+    .help-card-section-header {
+      .card-title {
+      }
+      .card-icon-wrp {
+        i {
+        }
+      }
+    }
+    .none-desktop {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .help-card {
+    width: 100%;
+    padding: 18px 20px 20px;
+    margin: 0;
+    .help-card-section-header {
+      .card-title {
+        margin-left: 0;
+        width: calc(100% - 80px);
+        line-height: 1.25;
+      }
+      .card-icon-wrp {
+        i {
+        }
+      }
+    }
+    .help-card-card-body {
+      .bodytitle {
+        width: calc(100% - 60px);
+        color: #2a2a2a;
+        line-height: 1.4;
+      }
+      .iconholder {
+        margin-right: 0;
+        .images {
+          font-size: 45px;
+        }
+      }
+    }
+    .none-desktop {
+      display: block;
+      text-align: center;
+    }
+  }
+}

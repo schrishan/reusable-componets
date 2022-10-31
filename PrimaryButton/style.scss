@@ -1,0 +1,26 @@
+.bt-btn {
+  height: auto;
+  min-width: 80px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  margin: 0;
+  font-size: 16px;
+  font-family: "BTRegular", Calibri;
+  text-align: center;
+  cursor: pointer;
+  &.bt-primary-btn {
+    color: #fff;
+    background: #5514b4;
+    border: 1px solid #5514b4;
+    &:hover {
+      background-color: #540e85;
+      cursor: pointer;
+    }
+    &.bt-disabled {
+      &:hover {
+        background-color: #5514b4;
+        cursor: default;
+      }
+    }
+  }
+}

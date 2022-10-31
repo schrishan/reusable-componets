@@ -1,0 +1,41 @@
+.scroll-top {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  background-color: #5514b4;
+  border-radius: 100%;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: middle;
+  i {
+    line-height: 0;
+    position: absolute;
+    top: 11px;
+    color: #fff;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    &::before {
+      content: "\e90a";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -8px;
+    }
+    &::after {
+      width: 1px;
+      position: absolute;
+      content: "";
+      height: 13px;
+      left: 0px;
+      background-color: #fff;
+      right: 0px;
+      margin: auto;
+      top: -1px;
+      z-index: 0;
+    }
+  }
+}
